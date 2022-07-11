@@ -1,0 +1,12 @@
+1. Query untuk menampilkan peserta dengan gaji tertinggi
+SELECT * FROM public.kawahedukasi WHERE gaji = (SELECT MAX(gaji) FROM public.kawahedukasi); 
+
+2. Query untuk menampilkan peserta BACKEND dengan nilai tertinggi dan gaji tertinggi
+SELECT kelas, MAX(nilai), MAX(gaji) FROM public.kawahedukasi GROUP BY kelas HAVING kelas='BACKEND'
+
+
+3. Query untuk menampilkan total peserta dalam kelas frontend
+SELECT kelas, COUNT(id) FROM public.kawahedukasi GROUP BY kelas HAVING kelas='FRONTEND';
+
+4. Query untuk menampilkan jumlah kehadiran tertinggi dan nilai tertinggi
+SELECT MAX(nilai), MAX(jumlah_kehadiran) FROM public.kawahedukasi;

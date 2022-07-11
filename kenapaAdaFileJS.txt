@@ -1,0 +1,3 @@
+maaf sebelumnya bapak/ibu saya kurang begitu paham buat soal nomor 2 dimana ada array gabungan dari tipe data integer dan string.
+saya kurang bisa menggabungkan kedua tipe data tersebut dalam satu array menggunakan java jadi saya membuat nya dalam javascript dan menjalankannya menggukan node.
+maaf sebelumnya.
